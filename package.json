@@ -1,0 +1,33 @@
+{
+  "name": "palmerabike",
+  "version": "1.0.0",
+  "description": "Tienda virtual de bicicletas MTB y Ruta",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhonnyagudelo/PalmeraBike.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhonnyagudelo/PalmeraBike/issues"
+  },
+  "homepage": "https://github.com/jhonnyagudelo/PalmeraBike#readme",
+  "devDependencies": {
+    "css-mqpacker": "^7.0.0",
+    "postcss-assets": "^5.0.0",
+    "postcss-cli": "^7.1.1",
+    "postcss-font-magician": "^2.3.1",
+    "postcss-preset-env": "^6.7.0",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "cssnano": "^4.1.10",
+    "postcss-import": "^12.0.1"
+  }
+}
