@@ -1,0 +1,63 @@
+/* .content {
+    padding:3em;
+    width: 800px;
+    margin:0 auto;
+} */
+
+.content__center {
+    text-align: center;
+    padding: 2em;
+    & h1{
+        font-size: 2em
+    }
+}
+
+.contenido__descripcion--articulo {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 1.2em;
+}
+
+.contenido__descripcion--articulo--parrafo {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    /* background-color: var(--prueba2); */
+    & p {
+        max-width: 10em;
+        font-size: 2em;
+        text-align: start;
+        margin-left: 2.5em;
+    }
+}
+
+.contenido__ilustrativo--derecha {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    text-align: center;
+}
+
+.articulos {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 19px;
+    margin: 4em 0;
+
+}
+
+.articulos__venta--imagen {
+    margin: 2em 0 2em 0;
+}
+
+.articulo__venta--descripcion {
+    text-align: center;
+}
+
+.contenido__paisaje--imagen {
+    display: flex;
+    
+}

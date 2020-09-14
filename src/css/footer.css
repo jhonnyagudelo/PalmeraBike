@@ -1,68 +1,112 @@
-.footer{
-    background-color: var(--fondo1);
-    /* height: 50vh; */
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-auto-rows: 100px;
-    column-gap: 10px;
-    color:var(--colorBlanco);
-    /* padding-top:15px ; */
+.footer {
+  background-color: var(--fondo1);
+  /* height: 50vh; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 100px;
+  column-gap: 10px;
+  color: var(--colorBlanco);
 }
 
+.footer__img {
+  display: flex;
+  justify-content: center;
+  padding: 0.7em;
+}
 
 .footer__logo {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  padding: 0.7em;
 }
 
-.footer__social a{
-    @extend  .header__navbar--a;
-    padding:0.7em;
-    position: relative;
-    left: 2.4em;
-    font-size:18px;
+.footer__social {
+  display: flex;
+  justify-content: center;
+  & a {
+    @extend .header__navbar--a;
+    padding: 0.7em;
+  }
 }
 
 .footer__palmera {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    align-text:center;
-    
-    &--title{
-        color: var(--fondo);
-        padding:0.8em;
-    }
-}
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  align-text: center;
 
-.footer__palmera > span{
+  &--title,
+  &--title-encuentra,
+  &--title-ayuda {
     color: var(--fondo);
+    padding: 0.8em;
+  }
+}
+
+.footer__palmera > span {
+  color: var(--fondo);
+  display: flex;
+  padding: 0.5em;
+  align-items: center;
+}
+
+.footer__palmera--icon i {
+  margin-left: 0.4em;
+}
+
+.footer__empresa {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  &--title {
+    @extend .footer__palmera--title;
+  }
+  &--descripcion {
+    @extend .footer__palmera--title;
+  }
+}
+
+.footer__politicas {
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+
+  &--title {
+    @extend .footer__palmera--title;
+  }
+  &--nav-item {
     display: flex;
-    padding: .5em;
-    align-items:center;
+    justify-content: space-between;
+    padding: 0.8em;
+  }
+  & li:nth-last-child(-n + 3) {
+    margin-top: 20px;
+  }
 }
 
-.footer__empresa{
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
+.footer__politicas--li {
+  list-style: none;
+  & > a {
+    color: var(--fondo);
+    text-decoration: none;
+  }
 }
 
-.footer__politicas{
-    grid-column-start: 4;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
+.footer__creado {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 4;
 }
 
-.footer__creado{
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 4;
+.footer__creado {
+  @extend .footer__palmera--title;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

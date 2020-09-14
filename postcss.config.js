@@ -28,16 +28,19 @@ module.exports = {
     }),
     postcssPresetEnv({
         stage:3,
-        autoprefixer: { grid: true , flex:false},
+        autoprefixer: { grid: false , flex:false},
            browsers: ['last 2 versions', '> 5%', 'ie 8'],
            preserve: false,
     }),
     fontMagician({
         variants: {
-            'Latto': {
+            'Playfair Display': {
                 '300': [],
                 '400': [],
-                '700': []
+                '700': [],
+            },
+            'Poppins': {
+                '400': [],
             }
         },
         foundries: ['google']

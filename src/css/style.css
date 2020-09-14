@@ -1,4 +1,6 @@
 @import './icon.css';
-@import './body.css';
 @import './variables.css';
+@import './header.css';
+@import './body.css';
+@import './content.css';
 @import './footer.css';
