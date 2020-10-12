@@ -18,7 +18,7 @@
     padding: 1.2em;
 }
 
-.contenido__descripcion--articulo--parrafo {
+.contenido__descripcion--articulo-parrafo {
     grid-column: 1 / 2;
     grid-row: 1;
     text-align: center;
@@ -60,4 +60,10 @@
 .contenido__paisaje--imagen {
     display: flex;
     
+}
+
+.footer__empresa--title,
+.footer__palmera--title,
+.footer__politicas--title {
+    text-align: center;
 }

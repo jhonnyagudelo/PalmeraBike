@@ -1,0 +1,37 @@
+/* login */
+.login {
+  height: 300px;
+  margin: 0 auto;
+  width: 800px;
+  display:flex;
+  flex-flow:column wrap;
+  justify-content:center;
+  align-items: center;
+  & label {
+    margin-bottom: 20px;
+    align-items: none;
+  }
+  &__btn {
+    width: 300px;
+  }
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  text-align: center;
+  border: 1px solid var(--prueba2);
+  border-radius: 2px;
+  padding: 10px;
+  width: 70%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.login input[type="text"]:focus,
+.login input[type="email"]:focus {
+  border: 2px solid var(--prueba2);
+
+}
+
+
+/* login */

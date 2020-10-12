@@ -1,0 +1,26 @@
+
+{% extends "Layout/layout.html" %}
+
+{% block titulo %}
+	Contactenos
+{% endblock %}
+
+{% block content %}
+  <section class="contactenos">
+      <h1 class="contactenos__titulo">
+          Contáctenos
+      </h1>
+      <p class="contactenos__solicitudes">
+        Contamos con un equipo de expertos de soporte al cliente para que respondan tus preguntas. Envíanos un mensaje a :
+      </p>
+      <form action="" class="contactenos__formulario">
+          <label for="nombre" class="contactenos__formulario--label">Nombre</label>
+          <input type="text" name="nombre" placeholder="Nombre" class="contactenos__formulario--input" id="">
+          <label for="email" class="contactenos__formulario--label">Correo</label>
+          <input type="email" name="email" placeholder="Correo" class="contactenos__formulario--input" id="">
+          <label for="" class="contactenos__formulario--label">Mensaje</label>
+          <textarea name="mensaje" id="" placeholder="Mensaje"></textarea>
+          <input class="btn btn__submit" type="submit" value="Enviar">
+      </form>
+  </section>
+  {% endblock %}

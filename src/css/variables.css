@@ -1,4 +1,7 @@
+/* variables */
+
 :root{
+
     --fondo:#f6f5f5;
     --fondo1: #1a1a2e;
     --aceptar:#81b214;
@@ -7,5 +10,9 @@
     --colorNegro:black;
     --prueba1:#16213e;
     --prueba2:#0f3460;
+    --colorBlanco:#fff;
+
 
 }
+
+/* variables */

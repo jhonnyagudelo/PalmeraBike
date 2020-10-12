@@ -1,0 +1,24 @@
+
+{% extends "Layout/layout.html" %}
+
+{% block titulo %}
+	Login
+{% endblock %}
+
+{% block content %}
+    <form action="/palmeraBike/auth" class="login" method="post" accept-charset="UTF-8">
+        <label for="email" class="login__label">Correo</label>
+        <input type="email" name="email" class="login__input" id="">
+        <label for="password" class="login__label">Contraseña</label>
+        <input type="password" name="password" id="">
+        {% if errors is defined %}
+            <ul class="errors">
+                {% for error in errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    
+        <input class="btn login__btn" type="submit" value="Login">
+    </form>
+{% endblock %}

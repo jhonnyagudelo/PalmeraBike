@@ -1,0 +1,71 @@
+/* Contacto */
+
+.contactenos {
+  max-width: 800px;
+  height: 100%;
+  margin: 0 auto;
+
+  &__titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    padding: 1.5em;
+  }
+  &__solicitudes {
+    font-size: 20px;
+  }
+}
+
+.contactenos__formulario {
+  display: flex;
+  flex-flow: column wrap;
+  &--label {
+    font-size: 1.2em;
+    padding: 0.5em 0;
+  }
+}
+
+.contactenos__formulario input[type="text"],
+.contactenos__formulario input[type="email"],
+.contactenos__formulario textarea {
+  border: 1px solid var(--prueba2);
+  border-radius: 2px;
+  padding: 10px;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contactenos__formulario input[type="text"]:focus,
+.contactenos__formulario input[type="email"]:focus,
+.contactenos__formulario textarea :focus {
+  border: 2px solid var(--prueba2);
+  padding: 15px;
+}
+
+.contactenos__formulario textarea {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 300px;
+  min-height: 150px;
+}
+
+.btn {
+  /* border-radius:5px; */
+  padding: 0.5em 0.2em;
+  font-size: 1.2em;
+  max-width: 8em;
+  border: 1px solid var(--prueba2);
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  background-color: var(--fondo1);
+  color: var(--fondo);
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--fondo1);
+}
+/* Contacto */
